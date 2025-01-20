@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.19
+
+    - name: Install dependencies
+      working-directory: ./go-log-seeker
+      run: go mod tidy
+
+    - name: Build
+      working-directory: ./go-log-seeker
+      run: go build -v ./src/...
+
+    - name: Run tests
+      working-directory: ./go-log-seeker
+      run: go test -v ./src/...
