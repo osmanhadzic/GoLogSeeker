@@ -21,6 +21,10 @@ jobs:
       with:
         go-version: v1.20.x
 
+    - name: Check code format
+      working-directory: ./go-log-seeker
+      run: gofmt -l .
+
     - name: Install dependencies
       working-directory: ./go-log-seeker
       run: go mod tidy

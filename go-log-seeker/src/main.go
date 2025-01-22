@@ -1,8 +1,8 @@
 package main
 
 import (
-	"go-log-seeker/src/routes"
 	"github.com/gin-gonic/gin"
+	"go-log-seeker/src/routes"
 )
 
 func main() {
