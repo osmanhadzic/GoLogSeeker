@@ -1,8 +1,15 @@
+/*
+ * SPDX-FileCopyrightText: 2025 OCode
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"go-log-seeker/src/routes"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {

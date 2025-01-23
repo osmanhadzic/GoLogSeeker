@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: GoLogSeeker
+Upstream-Contact: osmanhadzic <dev.osman.ha@gmail.com>
+Source: https://github.com/osmanhadzic/GoLogSeeker
+
+Files: .github/workflows/*
+Copyright: SECO Mind Srl
+License: CC0-1.0
