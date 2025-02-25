@@ -4,5 +4,5 @@ Upstream-Contact: osmanhadzic <dev.osman.ha@gmail.com>
 Source: https://github.com/osmanhadzic/GoLogSeeker
 
 Files: .github/workflows/*
-Copyright: SECO Mind Srl
+Copyright: OCode
 License: CC0-1.0
